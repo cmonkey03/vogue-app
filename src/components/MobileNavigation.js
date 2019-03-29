@@ -66,10 +66,10 @@ class MobileNavigation extends Component {
                 </Menu.Item>
                 <Menu.Item position='right'>
                   <Button as='a' inverted>
-                    Log in
+                    Login
                   </Button>
-                  <Button as='a' inverted style={{ marginLeft: '0.5em' }}>
-                    Sign Up
+                  <Button as='a'style={{ marginLeft: '0.5em' }}>
+                    Support
                   </Button>
                 </Menu.Item>
               </Menu>

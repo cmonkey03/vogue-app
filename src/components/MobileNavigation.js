@@ -45,9 +45,24 @@ class MobileNavigation extends Component {
           vertical
           visible={sidebarOpened}
         >
-          <Menu.Item as='a' active>Home</Menu.Item>
-          <Menu.Item as='a'>Why us</Menu.Item>
-          <Menu.Item as='a'>Contact us</Menu.Item>
+          <Menu.Item
+            as='a'
+            name='home'
+            active={activeItem==='home'}
+            onClick={this.handleClick}
+            >Home</Menu.Item>
+          <Menu.Item
+            as='a'
+            name='why us'
+            active={activeItem==='why us'}
+            onClick={this.handleClick}
+            >Why us</Menu.Item>
+          <Menu.Item
+            as='a'
+            name='contact us'
+            active={activeItem==='contact us'}
+            onClick={this.handleClick}
+            >Contact us</Menu.Item>
         </Sidebar>
 
         <Sidebar.Pusher dimmed={sidebarOpened}>
@@ -63,10 +78,21 @@ class MobileNavigation extends Component {
                   <Icon name='sidebar' />
                 </Menu.Item>
                 <Menu.Item position='right'>
-                  <Button as='a' inverted>
+                  <Button
+                    as='a'
+                    inverted
+                    name='login'
+                    active={activeItem==='login'}
+                    onClick={this.handleClick}>
                     Login
                   </Button>
-                  <Button as='a'style={{ marginLeft: '0.5em' }}>
+                  <Button
+                    as='a'
+                    style={{ marginLeft: '0.5em' }}
+                    name='support'
+                    active={activeItem==='support'}
+                    onClick={this.handleClick}
+                    >
                     Support
                   </Button>
                 </Menu.Item>

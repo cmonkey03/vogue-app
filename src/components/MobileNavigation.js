@@ -21,12 +21,13 @@ class MobileNavigation extends Component {
   state = {}
 
   handleSidebarHide = () => this.setState({ sidebarOpened: false })
-
   handleToggle = () => this.setState({ sidebarOpened: true })
+  handleClick = (e, { name }) => this.setState({ activeItem: name })
 
   render() {
     const { children } = this.props
     const { sidebarOpened } = this.state
+    const { activeItem } = this.state
 
     return (
       <Responsive
@@ -42,14 +43,24 @@ class MobileNavigation extends Component {
           vertical
           visible={sidebarOpened}
         >
-          <Menu.Item as='a' active>
-            Home
-          </Menu.Item>
-          <Menu.Item as='a'>Work</Menu.Item>
-          <Menu.Item as='a'>Company</Menu.Item>
-          <Menu.Item as='a'>Careers</Menu.Item>
-          <Menu.Item as='a'>Log in</Menu.Item>
-          <Menu.Item as='a'>Sign Up</Menu.Item>
+          <Menu.Item
+            as='a'
+            name='home'
+            active={activeItem==='home'}
+            onClick={this.handleClick}
+            >Home</Menu.Item>
+          <Menu.Item
+            as='a'
+            name='why us'
+            active={activeItem==='why us'}
+            onClick={this.handleClick}
+            >Why us</Menu.Item>
+          <Menu.Item
+            as='a'
+            name='contact us'
+            active={activeItem==='contact us'}
+            onClick={this.handleClick}
+            >Contact us</Menu.Item>
         </Sidebar>
 
         <Sidebar.Pusher dimmed={sidebarOpened}>
@@ -65,11 +76,22 @@ class MobileNavigation extends Component {
                   <Icon name='sidebar' />
                 </Menu.Item>
                 <Menu.Item position='right'>
-                  <Button as='a' inverted>
-                    Log in
+                  <Button
+                    as='a'
+                    inverted
+                    name='login'
+                    active={activeItem==='login'}
+                    onClick={this.handleClick}>
+                    Login
                   </Button>
-                  <Button as='a' inverted style={{ marginLeft: '0.5em' }}>
-                    Sign Up
+                  <Button
+                    as='a'
+                    style={{ marginLeft: '0.5em' }}
+                    name='support'
+                    active={activeItem==='support'}
+                    onClick={this.handleClick}
+                    >
+                    Support
                   </Button>
                 </Menu.Item>
               </Menu>

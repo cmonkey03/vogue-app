@@ -58,14 +58,14 @@ class DesktopNavigation extends Component {
                 <Menu.Item as='a'>Work</Menu.Item>
                 <Menu.Item as='a'>Company</Menu.Item>
                 <Menu.Item as='a'>Careers</Menu.Item>
-                <Menu.Item position='right'>
-                  <Button as='a' inverted={!fixed}>
-                    Log in
-                  </Button>
-                  <Button as='a' primary={fixed} style={{ marginLeft: '0.5em' }}>
-                    Support
-                  </Button>
-                </Menu.Item>
+                <Menu.Menu position='right'>
+                  <Menu.Item as='a' name='Login'/>
+                  <Menu.Item>
+                    <Button as='a' primary={fixed} style={{ marginLeft: '0.5em' }}>
+                      Support
+                    </Button>
+                  </Menu.Item>
+                </Menu.Menu>
               </Container>
             </Menu>
             <HomepageHeading />

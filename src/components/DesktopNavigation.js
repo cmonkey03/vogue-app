@@ -52,13 +52,13 @@ class DesktopNavigation extends Component {
               size='large'
             >
               <Container>
-                <Menu.Item as='a' active>
+                <Menu.Item as='a' header>
                   VogueApp
                 </Menu.Item>
-                <Menu.Item as='a' name='Home'/>
-                <Menu.Item as='a'>Why us</Menu.Item>
-                <Menu.Item as='a'>Contact us</Menu.Item>
                 <Menu.Menu position='right'>
+                  <Menu.Item as='a' name='Home' active/>
+                  <Menu.Item as='a'>Why us</Menu.Item>
+                  <Menu.Item as='a'>Contact us</Menu.Item>
                   <Menu.Item as='a' name='Login'/>
                   <Menu.Item>
                     <Button as='a' primary={fixed} style={{ marginLeft: '0.5em' }}>

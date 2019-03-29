@@ -63,7 +63,7 @@ class DesktopNavigation extends Component {
                     Log in
                   </Button>
                   <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
-                    Sign Up
+                    Support
                   </Button>
                 </Menu.Item>
               </Container>

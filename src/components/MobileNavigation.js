@@ -21,9 +21,7 @@ class MobileNavigation extends Component {
   state = {}
 
   handleSidebarHide = () => this.setState({ sidebarOpened: false })
-
   handleToggle = () => this.setState({ sidebarOpened: true })
-
   handleClick = (e, { name }) => this.setState({ activeItem: name })
 
   render() {

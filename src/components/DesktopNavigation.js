@@ -53,11 +53,11 @@ class DesktopNavigation extends Component {
             >
               <Container>
                 <Menu.Item as='a' active>
-                  Home
+                  VogueApp
                 </Menu.Item>
-                <Menu.Item as='a'>Work</Menu.Item>
-                <Menu.Item as='a'>Company</Menu.Item>
-                <Menu.Item as='a'>Careers</Menu.Item>
+                <Menu.Item as='a' name='Home'/>
+                <Menu.Item as='a'>Why us</Menu.Item>
+                <Menu.Item as='a'>Contact us</Menu.Item>
                 <Menu.Menu position='right'>
                   <Menu.Item as='a' name='Login'/>
                   <Menu.Item>

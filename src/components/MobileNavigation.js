@@ -24,9 +24,12 @@ class MobileNavigation extends Component {
 
   handleToggle = () => this.setState({ sidebarOpened: true })
 
+  handleClick = (e, { name }) => this.setState({ activeItem: name })
+
   render() {
     const { children } = this.props
     const { sidebarOpened } = this.state
+    const { activeItem } = this.state
 
     return (
       <Responsive
@@ -42,14 +45,9 @@ class MobileNavigation extends Component {
           vertical
           visible={sidebarOpened}
         >
-          <Menu.Item as='a' active>
-            Home
-          </Menu.Item>
-          <Menu.Item as='a'>Work</Menu.Item>
-          <Menu.Item as='a'>Company</Menu.Item>
-          <Menu.Item as='a'>Careers</Menu.Item>
-          <Menu.Item as='a'>Log in</Menu.Item>
-          <Menu.Item as='a'>Sign Up</Menu.Item>
+          <Menu.Item as='a' active>Home</Menu.Item>
+          <Menu.Item as='a'>Why us</Menu.Item>
+          <Menu.Item as='a'>Contact us</Menu.Item>
         </Sidebar>
 
         <Sidebar.Pusher dimmed={sidebarOpened}>

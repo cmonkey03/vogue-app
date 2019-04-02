@@ -1,4 +1,14 @@
 import React from 'react';
+import {
+  Button,
+  Container,
+  Divider,
+  Grid,
+  Header,
+  Image,
+  List,
+  Segment,
+} from 'semantic-ui-react';
 
 const Footer = () => {
   return (

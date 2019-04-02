@@ -39,7 +39,8 @@ const Footer = () => {
               <p>
                 Extra space for a call to action inside the footer that could help re-engage users.
               </p>
-              <Icon name='facebook'/>
+              <Icon  />
+              <Icon />
             </Grid.Column>
           </Grid.Row>
         </Grid>

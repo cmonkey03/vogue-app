@@ -8,7 +8,6 @@ import {
   Grid,
   Header,
   Image,
-  List,
   Segment,
 } from 'semantic-ui-react';
 
@@ -99,6 +98,7 @@ const HomepageLayout = () => (
         </Button>
       </Container>
     </Segment>
+    <Footer />
   </ResponsiveHeader>
 )
 export default HomepageLayout;

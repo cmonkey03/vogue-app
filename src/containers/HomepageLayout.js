@@ -99,6 +99,7 @@ const HomepageLayout = () => (
         </Button>
       </Container>
     </Segment>
+    <Footer />
   </ResponsiveHeader>
 )
 export default HomepageLayout;

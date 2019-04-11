@@ -15,7 +15,6 @@ const Footer = () => {
         <Grid divided inverted stackable>
           <Grid.Row>
             <Grid.Column width={3}>
-              <Header inverted as='h4' content='About' />
               <List link inverted>
                 <List.Item as='a'>
                   <Icon name='phone'/>  +1 800 SERVE IT
@@ -29,7 +28,7 @@ const Footer = () => {
               </List>
             </Grid.Column>
             <Grid.Column width={3}>
-              <Header inverted as='h4' content='Services' />
+              <Header inverted as='h4' content='Company' />
               <List link inverted>
                 <List.Item as='a'>Banana Pre-Order</List.Item>
                 <List.Item as='a'>DNA FAQ</List.Item>
@@ -47,7 +46,7 @@ const Footer = () => {
               </List>
             </Grid.Column>
             <Grid.Column width={3}>
-              <Header inverted as='h4' content='Services' />
+              <Header inverted as='h4' content='Others' />
               <List link inverted>
                 <List.Item as='a'>Banana Pre-Order</List.Item>
                 <List.Item as='a'>DNA FAQ</List.Item>

@@ -15,7 +15,6 @@ const Footer = () => {
         <Grid divided inverted stackable>
           <Grid.Row>
             <Grid.Column width={3}>
-              <Header inverted as='h4' content='About' />
               <List link inverted>
                 <List.Item as='a'>
                   <Icon name='phone'/>  +1 800 SERVE IT

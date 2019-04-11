@@ -12,9 +12,9 @@ const Footer = () => {
   return (
     <Segment inverted vertical style={{ padding: '5em 0em' }}>
       <Container>
-        <Grid inverted stackable>
+        <Grid inverted stackable columns={5}>
           <Grid.Row>
-            <Grid.Column width={3}>
+            <Grid.Column>
               <List link inverted>
                 <List.Item as='a'>
                   <Icon name='phone'/>  +1 800 SERVE IT
@@ -27,7 +27,7 @@ const Footer = () => {
                   Religious Ceremonies</List.Item>
               </List>
             </Grid.Column>
-            <Grid.Column width={3}>
+            <Grid.Column>
               <Header inverted as='h4' content='Company' />
               <List link inverted>
                 <List.Item as='a'>Banana Pre-Order</List.Item>
@@ -36,7 +36,7 @@ const Footer = () => {
                 <List.Item as='a'>Favorite X-Men</List.Item>
               </List>
             </Grid.Column>
-            <Grid.Column width={3}>
+            <Grid.Column>
               <Header inverted as='h4' content='Services' />
               <List link inverted>
                 <List.Item as='a'>Banana Pre-Order</List.Item>
@@ -45,7 +45,7 @@ const Footer = () => {
                 <List.Item as='a'>Favorite X-Men</List.Item>
               </List>
             </Grid.Column>
-            <Grid.Column width={3}>
+            <Grid.Column>
               <Header inverted as='h4' content='Others' />
               <List link inverted>
                 <List.Item as='a'>Banana Pre-Order</List.Item>
@@ -54,7 +54,7 @@ const Footer = () => {
                 <List.Item as='a'>Favorite X-Men</List.Item>
               </List>
             </Grid.Column>
-            <Grid.Column width={3}>
+            <Grid.Column>
               <List link inverted>
                 <List.Item as='a'>
                   <Icon name='facebook'/>

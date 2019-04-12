@@ -13,7 +13,7 @@ import {
 */
 
 const HomepageHeading = ({ mobile }) => (
-  <Container text>
+  <Container>
     <Header
       as='h1'
       content='The Vogue Company'

@@ -4,7 +4,8 @@ import {
   Button,
   Container,
   Header,
-  Icon
+  Icon,
+  Search
 } from 'semantic-ui-react';
 
 /* Heads up! HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
@@ -34,6 +35,7 @@ const HomepageHeading = ({ mobile }) => (
         marginTop: mobile ? '0.5em' : '1.5em',
       }}
     />
+  <Search placeholder='Find new moves'/>
     <Button primary size='huge'>
       Find new moves
     </Button>

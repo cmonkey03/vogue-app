@@ -3,8 +3,8 @@ import React from 'react';
 import {
   Button,
   Container,
+  Grid,
   Header,
-  Icon,
   Search
 } from 'semantic-ui-react';
 
@@ -35,10 +35,14 @@ const HomepageHeading = ({ mobile }) => (
         marginTop: mobile ? '0.5em' : '1.5em',
       }}
     />
-  <Search placeholder='Find new moves'/>
+  <Grid>
+    <Grid.Row>
+    <Search placeholder='Find new moves'/>
     <Button primary size='huge'>
       Find new moves
     </Button>
+    </Grid.Row>
+  </Grid>
   </Container>
 )
 

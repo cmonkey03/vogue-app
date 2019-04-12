@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import {
   Button,
+  Container,
   Grid,
   Header,
   Search
@@ -12,7 +13,7 @@ import {
 */
 
 const HomepageHeading = ({ mobile }) => (
-  <React.Fragment>
+  <Container text>
     <Header
       as='h1'
       content='The Vogue Company'
@@ -34,19 +35,15 @@ const HomepageHeading = ({ mobile }) => (
         marginTop: mobile ? '0.5em' : '1.5em',
       }}
     />
-  <Grid centered>
+    <Grid >
       <Grid.Row>
-        <Grid.Column>
         <Search placeholder='Find new moves'/>
-        </Grid.Column>
-        <Grid.Column>
         <Button primary size='huge'>
-          Find new moves
+          Search
         </Button>
-        </Grid.Column>
       </Grid.Row>
     </Grid>
-  </React.Fragment>
+  </Container>
 )
 
 HomepageHeading.propTypes = {

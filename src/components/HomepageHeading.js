@@ -35,14 +35,14 @@ const HomepageHeading = ({ mobile }) => (
         marginTop: mobile ? '0.5em' : '1.5em',
       }}
     />
-  <Grid>
-    <Grid.Row>
-    <Search placeholder='Find new moves'/>
-    <Button primary size='huge'>
-      Find new moves
-    </Button>
-    </Grid.Row>
-  </Grid>
+    <Grid >
+      <Grid.Row>
+        <Search placeholder='Find new moves'/>
+        <Button primary size='huge'>
+          Search
+        </Button>
+      </Grid.Row>
+    </Grid>
   </Container>
 )
 

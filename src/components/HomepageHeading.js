@@ -26,7 +26,7 @@ const HomepageHeading = ({ mobile }) => (
     />
     <Header
       as='h2'
-      content='Do whatever you want when you want to.'
+      content='Learn death drops in no time!'
       inverted
       style={{
         fontSize: mobile ? '1.5em' : '1.7em',

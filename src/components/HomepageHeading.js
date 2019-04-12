@@ -3,8 +3,9 @@ import React from 'react';
 import {
   Button,
   Container,
+  Grid,
   Header,
-  Icon
+  Search
 } from 'semantic-ui-react';
 
 /* Heads up! HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
@@ -15,7 +16,7 @@ const HomepageHeading = ({ mobile }) => (
   <Container text>
     <Header
       as='h1'
-      content='Imagine-a-Company'
+      content='The Vogue Company'
       inverted
       style={{
         fontSize: mobile ? '2em' : '4em',
@@ -26,7 +27,7 @@ const HomepageHeading = ({ mobile }) => (
     />
     <Header
       as='h2'
-      content='Do whatever you want when you want to.'
+      content='Learn death drops in no time!'
       inverted
       style={{
         fontSize: mobile ? '1.5em' : '1.7em',
@@ -34,10 +35,14 @@ const HomepageHeading = ({ mobile }) => (
         marginTop: mobile ? '0.5em' : '1.5em',
       }}
     />
+  <Grid>
+    <Grid.Row>
+    <Search placeholder='Find new moves'/>
     <Button primary size='huge'>
-      Get Started
-      <Icon name='right arrow' />
+      Find new moves
     </Button>
+    </Grid.Row>
+  </Grid>
   </Container>
 )
 
